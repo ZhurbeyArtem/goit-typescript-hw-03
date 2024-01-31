@@ -100,6 +100,8 @@ wizard.levelUp();  // Level up! New level is 16
 ```ts
 const key = new Key();
 
+
+
 const house = new MyHouse(key);
 const person = new Person(key);
 
