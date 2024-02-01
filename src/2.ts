@@ -17,17 +17,12 @@
 class Employee {
   // Заповніть модифікатори доступу
   name: string;
-  #department: string;
+  private department: string;
   protected salary: number;
-
-  constructor(name: string, department: string, salary: number) {
-    this.name = name;
-    this.#department = department;
-    this.salary = salary;
-  }
+  constructor(name: string, department: string, salary: number) { }
 
   getEmployeeDetails() {
-    return `Name: ${this.name}, Department: ${this.#department}, Salary: ${this.salary}`;
+    return `Name: ${this.name}, Department: ${this.department}, Salary: ${this.salary}`;
   }
 }
 
